@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Admin Dashboard Container */
+.admin-dashboard {
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+button {
+  background: #ff9800;
+  color: white;
+  font-size: 14px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 500px;
+  cursor: pointer;
+  transition: 3s;
+  margin: 5px;
+}
+
+button:hover {
+  background: #e68900;
+}
+
+.signout-button {
+  float: right;
+  background: #d32f2f;
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+.signout-button:hover {
+  background: #b71c1c;
+}
+
+/* Tables */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.admin-table th, .admin-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.admin-table th {
+  background: #333;
+  color: white;
+  text-transform: uppercase;
+}
+
+.admin-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.admin-table tr:hover {
+  background: #f1f1f1;
+  transition: 0.3s;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+

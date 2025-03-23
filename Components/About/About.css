@@ -1,0 +1,149 @@
+/* src/Components/About/About.css */
+
+/* General container */
+.about-container {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    font-style: oblique;
+  }
+  
+  /* Header Section */
+  .about-header {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .about-header h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .about-header p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-top: 10px;
+    color:white;
+    
+  }
+  
+  /* Main Content */
+  .about-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Main Layout: Flex container */
+  .about-main {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap; /* Allows the content to wrap for smaller screens */
+  }
+  
+  /* Facilities Section */
+  .facilities {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .facilities h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+  }
+  
+  .facility-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: flex-start;
+  }
+  
+  .facility-item {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .facility-item h3 {
+    font-size: 1.4rem;
+    color: #2980b9;
+  }
+  
+  .facility-item p {
+    font-size: 1rem;
+    color: #34495e;
+  }
+  
+  .facility-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Image Section: Display images beside the facilities */
+  .image-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .about-image:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Footer Section */
+  .about-footer {
+    background-color: #34495e;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .about-main {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .facility-list {
+      justify-content: center;
+      gap: 15px;
+    }
+  
+    .facility-item {
+      width: 80%;
+    }
+  
+    .image-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-image {
+      width: 80%;
+      height: auto;
+    }
+  }
+  
